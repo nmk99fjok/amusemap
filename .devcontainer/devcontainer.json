@@ -1,0 +1,19 @@
+{
+  "name": "laravel",
+  // docker-composeファイルのパス
+  "dockerComposeFile": ["docker-compose.yml"],
+  // 作業するコンテナ名
+  "service": "app",
+  // 作業するコンテナ内フォルダー
+  "workspaceFolder": "/var/www/html",
+  "settings": {
+    "terminal.integrated.shell.linux": null
+  },
+  // 拡張機能
+  "extensions": [
+    "onecentlin.laravel5-snippets",
+    "editorconfig.editorconfig"
+  ],
+  // リモートユーザー
+  "remoteUser": "vscode"
+}
