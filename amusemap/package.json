@@ -24,6 +24,8 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
-        "vue-router": "^3.5.4"
+        "leaflet": "^1.8.0",
+        "vue-router": "^3.5.4",
+        "vue2-leaflet": "^2.7.1"
     }
 }
