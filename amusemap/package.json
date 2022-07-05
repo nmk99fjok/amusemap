@@ -26,6 +26,7 @@
     "dependencies": {
         "leaflet": "^1.8.0",
         "vue-router": "^3.5.4",
-        "vue2-leaflet": "^2.7.1"
+        "vue2-leaflet": "^2.7.1",
+        "vuetify": "^2.6.7"
     }
 }
