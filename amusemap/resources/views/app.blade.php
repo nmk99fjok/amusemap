@@ -12,6 +12,7 @@
 <body>
     <div id="app">
         <!-- ここにVueコンポーネントを組み込む -->
+        <main-component></main-component>
     </div>
     <script src="{{ mix('/js/app.js') }}" defer></script>
 </body>

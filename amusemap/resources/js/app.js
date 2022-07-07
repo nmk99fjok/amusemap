@@ -4,6 +4,13 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Vuetify from 'vuetify';
+import { LMap, LTileLayer, LMarker } from 'vue2-leaflet';
+import MainComponent from './components/MainComponent';
+import MapPanel from './components/MapPanel';
+import 'leaflet/dist/leaflet.css';
 require('./bootstrap');
 
 window.Vue = require('vue').default;
@@ -19,7 +26,13 @@ window.Vue = require('vue').default;
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.use(Vuetify);
+
+Vue.component('l-map', LMap);
+Vue.component('l-tile-layer', LTileLayer);
+Vue.component('l-marker', LMarker);
+Vue.component('MainComponent', MainComponent);
+Vue.component('MapPanel', MapPanel);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -29,4 +42,5 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
+    vuetify: new Vuetify(),
 });
