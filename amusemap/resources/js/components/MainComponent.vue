@@ -5,7 +5,15 @@
     </v-app-bar>
     <v-main>
       <v-container>
-        <map-panel></map-panel>
+        <v-row align="center">
+          <v-col cols="6">
+            <store-panel></store-panel>
+          </v-col>
+
+          <v-col cols="6">
+            <map-panel></map-panel>
+          </v-col>
+        </v-row>
       </v-container>
     </v-main>
   </v-app>

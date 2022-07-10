@@ -10,6 +10,7 @@ import Vuetify from 'vuetify';
 import { LMap, LTileLayer, LMarker } from 'vue2-leaflet';
 import MainComponent from './components/MainComponent';
 import MapPanel from './components/MapPanel';
+import StorePanel from './components/StorePanel';
 import 'leaflet/dist/leaflet.css';
 require('./bootstrap');
 
@@ -31,8 +32,9 @@ Vue.use(Vuetify);
 Vue.component('l-map', LMap);
 Vue.component('l-tile-layer', LTileLayer);
 Vue.component('l-marker', LMarker);
-Vue.component('MainComponent', MainComponent);
-Vue.component('MapPanel', MapPanel);
+Vue.component('main-component', MainComponent);
+Vue.component('map-panel', MapPanel);
+Vue.component('store-panel', StorePanel);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
